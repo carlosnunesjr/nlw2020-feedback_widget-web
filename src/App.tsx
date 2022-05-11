@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Widget } from "./components/Widget";
 
+export function App() {
   return (
-    <h1>Hello World</h1>
-  )
+    <Routes>
+      <Route path="/" element={<Widget />} />
+    </Routes>
+  );
 }
-
-export default App
