@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    @apply bg-[#09090A] text-zinc-100;
+    @apply dark:bg-[#09090A] bg-stone-300 dark:text-zinc-100 text-zinc-800;
 }
 
 /*.feedback-button {
